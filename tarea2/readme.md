@@ -25,9 +25,7 @@ Aqui se construye DES manualmente, el ejemplo usa la librería pycryptodome.
 Si no se contara con la lista reducida de claves (`words.txt`), sería necesario realizar un ataque de fuerza bruta sobre el espacio completo de **2⁵⁶** claves posibles de DES.  
 Una computadora que pueda probar **10 millones de claves por segundo** tardaría aproximadamente:
 
-\[
-\frac{2^{56}}{10^7} \text{ segundos} \approx 7.2 \times 10^9 \text{ segundos} \approx \mathbf{228 \text{ años}}.
-\]
+> 2⁵⁶ / 10⁷ ≈ 7.2 × 10⁹ segundos ≈ **228 años**.
 
 Este cálculo demuestra por qué es crucial **no utilizar claves débiles o basadas en diccionarios** y por qué DES ya no se considera seguro frente a atacantes con recursos modernos.
 
@@ -35,7 +33,7 @@ Este cálculo demuestra por qué es crucial **no utilizar claves débiles o basa
 
 ##  Problema 8 – Bandera obtenida
 
-Luego de explotar la vulnerabilidad de **SQL injection** en el login de la aplicación Flask, se accedió la página. Entre los datos se identifico una cadena en Base64 que es 
+Luego de ver la vulnerabilidad de **SQL injection** en el login de la aplicación Flask, se accedió la página. Entre los datos se identifico una cadena en Base64 que es 
 
 - `ZmxhZ3tTUUxfSW5qZWN0aW9uX29uc2V2ZXJ9`
 
